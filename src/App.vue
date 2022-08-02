@@ -1,14 +1,14 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from "vue-router";
+import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
+    <img alt="Vue logo" class="logo animate-bounce" src="@/assets/two-dogs.png" width="125" height="125" />
+    <!-- <div class="logo"></div> -->
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Bella & Mishka" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -25,11 +25,24 @@ header {
   line-height: 1.5;
   max-height: 100vh;
 }
-
 .logo {
   display: block;
   margin: 0 auto 2rem;
 }
+/* 
+.logo {
+ width: 100%;
+ height: 50%;
+  background: url("./assets/two-dogs.png") no-repeat;
+background-size: contain;
+}
+.logo:hover {
+  width: 100%;
+  height: 50%;
+  
+  background: url("./assets/cute-dog.png") no-repeat;
+  background-size: contain;
+} */
 
 nav {
   width: 100%;
@@ -67,6 +80,19 @@ nav a:first-of-type {
     margin: 0 2rem 0 0;
   }
 
+/* .logo {
+ width: 100%;
+ height: 50%;
+  background: url("./assets/two-dogs.png") no-repeat;
+background-size: contain;
+}
+.logo:hover {
+  width: 100%;
+  height: 50%;
+  
+  background: url("./assets/cute-dog.png") no-repeat;
+  background-size: contain;
+} */
   header .wrapper {
     display: flex;
     place-items: flex-start;
